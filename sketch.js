@@ -7,9 +7,15 @@
 let boxSize = 100;
 let boxGray = 125;
 
+let value = 0;
+let threshold = 30;
+
+
 function setup() {
   createCanvas(400, 400);
   rectMode(CENTER);
+
+  setShakeThreshold(threshold);
 
   // try to setup WebMIDI and call 
   // onMIDISuccess() if successful
@@ -28,6 +34,17 @@ function draw() {
   background(255);
   fill(boxGray);
   square(width/2,height/2,boxSize);
+}
+
+
+function deviceMoved(){
+  value = value + 5;
+  threshhold = threshold + 5;
+  if (value > 255) {
+    value = 0;
+    threshold = 30;
+  }
+  setShakeThreshold(threshold);
 }
 
 // onMIDISuccess is called if WebMIDI was able to be accessed
