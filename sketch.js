@@ -86,3 +86,4 @@ function onMIDIMessage(message) {
     // change box size based on *any* control change...
     if (data[0] == 176) boxSize = data[2];
 }
+
