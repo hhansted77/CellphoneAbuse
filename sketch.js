@@ -3,8 +3,6 @@ let state = 0;
 let i = 0;
 let images = [];
 let showAlternateImage = true;
-
-
 function preload(){
     images[0] = loadImage("libraries/Happi.png");
     images[1] = loadImage("libraries/Sad.png");
@@ -53,11 +51,12 @@ function draw() {
   } 
   
 }
-function keyPressed(){  
-  const state = 0
-  showAlternateImage = showAlternateImage ? false : true;
-  console.log(showAlternateImage);
 
-}
+function keyPressed(){
+  if(key == '1')
+    showAlternateImage = showAlternateImage ? false : true;
+  }
+
+
 
 
