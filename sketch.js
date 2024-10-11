@@ -56,22 +56,10 @@ function draw() {
     //ded 
     break;
   } 
-  
-}
-function keyPressed(){  
-  const state = 0
-  showAlternateImage = showAlternateImage ? false : true;
-  //angersad = angersad ? false : true;
-  console.log(showAlternateImage);
-
 }
 
 
-function keyPressed(){
-  if (state == 0); 
-    (key == '1');
-    showAlternateImage = showAlternateImage ? false : true;
-  }
+
 
 
 
