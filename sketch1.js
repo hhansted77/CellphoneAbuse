@@ -1,34 +1,37 @@
-let img[];
-let snd[];
 
-let anger;
-let sad;
+let snd = [];
+let chirp;
 
-let angersad;
+let angersad = true;
 
 function preload(){
-    img[0] = loadImage('libraries/Error.png');
-    img[1] = loadImage('libraries/Sad.png');
+
     snd[0] = loadSound('libraries/robot getting mad.mp3');
     snd[1] = loadSound('libraries/screaming robot mad.mp3');
     snd[2] = loadSound('libraries/robot dizzy.mp3');
-
-    angersad = loadImage('libraries/Error.png');
+    snd[3] = loadSound('libraries/shriek.mp3')
+    chirp = loadSound('libraries/wake-up-the-robot-84894.mp3')
 }
 
-function keyIsPressed();
-
-if(angersad == img[0]){
-    angersad == img[1];
+case(1):
+if (showAlternateImage == true){
+  image(images[2], 0, 0);
 } else {
-    angersad = img[0];
+  (showAlternateImage = false);
+  image(images[1], 0, 0);
 }
 
 
-function draw2() {
-    image(img[0], 0, 0);
-    
+break;
+case(2):
+if (deviceShaken){
+    (showAlternateImage == false);
+    image(images[3], 0, 0);
+  } else {
+    (showAlternateImage == true);
+    image(images[1], 0, 0);
+  }
 }
 
 
-
+break;

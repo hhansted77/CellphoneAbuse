@@ -26,23 +26,20 @@ function draw() {
     case(0):
        if (showAlternateImage == true) {
         image(images[0], 0, 0)// show the alt image
+        if (mouseIsPressed == true){
+          chirp.play();
+        }
       } 
       else {
         (showAlternateImage = false) 
           image(images[2], 0, 0)
       }
       
+      if (key == ".") state = (state + 1);
 
     break;
-    case(1):
-
-      draw2();
-
-    break;
-    case(2):
-
-    
-    break;
+  
+   
     case(3):
 
     
@@ -57,8 +54,10 @@ function draw() {
 function keyPressed(){  
   const state = 0
   showAlternateImage = showAlternateImage ? false : true;
+  //angersad = angersad ? false : true;
   console.log(showAlternateImage);
 
 }
+
 
 
