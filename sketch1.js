@@ -7,7 +7,7 @@ let angersad = true;
 function preload(){
 
     snd[0] = loadSound('libraries/robot getting mad.mp3');
-    snd[1] = loadSound('libraries/screaming robot mad.mp3');
+    snd[1] = loadSound('libraries/screaming robot mad .mp3');
     snd[2] = loadSound('libraries/robot dizzy.mp3');
     snd[3] = loadSound('libraries/shriek.mp3')
     chirp = loadSound('libraries/wake-up-the-robot-84894.mp3')
