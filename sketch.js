@@ -9,7 +9,10 @@ function preload(){
     images[2] = loadImage("libraries/Error.png");
     images[3] = loadImage("libraries/Dizzy.png");
     images[4] = loadImage("libraries/Ded.png")
-  
+    sounds[0] = loadSound("assets/robot getting mad.mp3")
+    sounds[1] = loadSound("assets/screaming robot mad .mp3")
+    sounds[2] = loadSound("assets/robot dizzy.mp3")
+    sounds[3] = loadSound("assets/robotdeath.mp3")
 }
 function setup() {
   createCanvas(windowWidth,windowHeight);
@@ -63,7 +66,7 @@ function keyPressed(){
   showAlternateImage = showAlternateImage ? false : true;
   //angersad = angersad ? false : true;
   console.log(showAlternateImage);
-
+  
 }
 
 
