@@ -22,8 +22,11 @@ function draw() {
   switch(state){
     
     case(0):
-      if (showAlternateImage == true) {
+       if (showAlternateImage == true) {
         image(images[0], 0, 0)// show the alt image
+        if (mouseIsPressed == true){
+          chirp.play();
+        }
       } 
       else {
         (showAlternateImage = false) 
@@ -35,7 +38,11 @@ function draw() {
     case(1):
 
     //angry to sad
+      if (key == ".") state = (state + 1);
+
     break;
+  
+   
     case(2):
 
     //sad to dizzy
@@ -51,6 +58,14 @@ function draw() {
   } 
   
 }
+function keyPressed(){  
+  const state = 0
+  showAlternateImage = showAlternateImage ? false : true;
+  //angersad = angersad ? false : true;
+  console.log(showAlternateImage);
+
+}
+
 
 function keyPressed(){
   if (state == 0); 
