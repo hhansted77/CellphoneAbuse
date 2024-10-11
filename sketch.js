@@ -30,30 +30,31 @@ function draw() {
           image(images[2], 0, 0)
       }
       
-
+      //happy to angry
     break;
     case(1):
 
-    
+    //angry to sad
     break;
     case(2):
 
-    
+    //sad to dizzy
     break;
     case(3):
 
-    
+    // dizzy to ded
     break;
     case(4):
 
-    
+    //ded 
     break;
   } 
   
 }
 
 function keyPressed(){
-  if(key == '1')
+  if (state == 0); 
+    (key == '1');
     showAlternateImage = showAlternateImage ? false : true;
   }
 
