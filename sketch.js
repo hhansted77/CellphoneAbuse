@@ -1,4 +1,4 @@
-let state = 2;
+let state = 0;
 let i = 0;
 let images = [];
 let showAlternateImage = true;
@@ -47,7 +47,7 @@ function draw() {
         image(images[1], 0, 0);
       }
       //angry to sad
-      //if (key == ".") state = state + 1;
+      if (key == ".") state = state + 1;
 
       break;
 
