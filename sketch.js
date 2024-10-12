@@ -15,11 +15,13 @@ function preload() {
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  sounds[0] = loadSound("libraries/robot getting mad.mp3");
-  sounds[1] = loadSound("libraries/screaming robot mad .mp3");
-  sounds[2] = loadSound("libraries/robot dizzy.mp3");
-  sounds[3] = loadSound("libraries/robotdeath.mp3");
-  chirp = loadSound("libraries/wake-up-the-robot-84894.mp3");
+  sounds[0] = loadSound('libraries/wake-up-the-robot-84894.mp3');
+  sounds[1] = loadSound('libraries/robotgettingmad.mp3');
+  sounds[2] = loadSound('libraries/screamingrobotmad.mp3');
+  sounds[3] = loadSound('libraries/robotnooosounds.mp3');
+  sounds[4] = loadSound('libraries/shriek.mp3');
+  sounds[5] = loadSound('libraries/robotdizzy.mp3');
+
 
 }
 function draw() {
