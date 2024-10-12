@@ -1,7 +1,7 @@
 let shakes = 0;
 let shakey = 0;
-let minimumShakes = 5;
-let caseShakes = 10;
+let minimumShakes = 50;
+let caseShakes = 100;
 
 function keyTyped(){
     setTimeout (function() {
