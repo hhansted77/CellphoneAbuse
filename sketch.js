@@ -1,4 +1,4 @@
-let state = 0;
+let state = 2;
 let i = 0;
 let images = [];
 let showAlternateImage = true;
