@@ -44,7 +44,13 @@ function draw() {
 
     break;
     case(1):
-
+    if (showAlternateImage == true) {
+      image(images[2], 0, 0)// show the alt image
+    } 
+    else {
+      (showAlternateImage = false) 
+        image(images[1], 0, 0)
+    }
     //angry to sad
       if (key == ".") state = (state + 1);
 
@@ -52,19 +58,34 @@ function draw() {
   
    
     case(2):
-
+    if (showAlternateImage == true) {
+      image(images[1], 0, 0)// show the alt image
+    } 
+    else {
+      (showAlternateImage = false) 
+        image(images[3], 0, 0)
+    }
     //sad to dizzy
     break;
     case(3):
-
+    if (showAlternateImage == true) {
+      image(images[3], 0, 0)// show the alt image
+    } 
+    else {
+      (showAlternateImage = false) 
+        image(images[4], 0, 0)
+    }
     // dizzy to ded
     break;
     case(4):
-
+    if (showAlternateImage == true) {
+      image(images[4], 0, 0)// show the alt image
+    }
     //ded 
     break;
   } 
 }
+
 
 
 
