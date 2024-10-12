@@ -13,6 +13,14 @@ function keyPressed() {
       if (key == "1") {
         showAlternateImage = showAlternateImage ? false : true;
       }
+
+//AUDIO KEYBINDS
+if (key == 'q'){
+  sounds[0].play();
+}
+
+
+
   }//, 2000);
 
   if (state == 1)
