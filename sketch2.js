@@ -8,17 +8,18 @@ function keyPressed() {
     console.log(shakes);
     if (key == "9")
     state = (state + 1) % 5;
-    //setTimeout(function () {
-    if (state == 0)
-      if (key == "1") {
-        showAlternateImage = showAlternateImage ? false : true;
+    if (state == 0){
+        if (key == "1") {
+            showAlternateImage = showAlternateImage ? false : true;
       }
-  }//, 2000);
+  }
 
-  if (state == 1)
-    if (key == "2") {
-      showAlternateImage = showAlternateImage ? false : true;
+    if (state == 1){
+        if (key == "1") {
+            showAlternateImage = showAlternateImage ? false : true;
     }
+}
+}
  
 function deviceShaken(){
   if (state == 2)
@@ -36,7 +37,7 @@ function deviceShaken(){
         shakes = 0;
         shakey = 0;
     }
-  //}
+  
   if (state == 3) 
     shakey++;
   if (shakey >= caseShakes) {

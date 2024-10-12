@@ -27,9 +27,11 @@ function draw() {
     case 0:
       if (showAlternateImage == true) {
         image(images[0], 0, 0); // show the alt image
+        images.resize("360")
       } else {
         showAlternateImage = false;
         image(images[2], 0, 0);
+        images.resize("360")
       }
 
       //happy to angry
@@ -42,30 +44,35 @@ function draw() {
     case 1:
       if (showAlternateImage == true) {
         image(images[2], 0, 0); // show the alt image
+        images.resize("360");
       } else {
         showAlternateImage = false;
         image(images[1], 0, 0);
+        images.resize("360");
       }
       //angry to sad
-      if (key == ".") state = state + 1;
+      //if (key == ".") state = state + 1;
 
       break;
 
     case 2:
       if (showAlternateImage == true) {
         image(images[1], 0, 0); // show the alt image
+        images.resize("360");
       } else {
         showAlternateImage = false;
         image(images[3], 0, 0);
-      }
+        images.resize("360");}
       //sad to dizzy
       break;
     case 3:
       image(images[3], 0, 0); // show the alt image
+      images.resize("360");
       // dizzy to ded
       break;
     case 4:
       image(images[4], 0, 0); // show the alt image
+      images.resize("360");
       //ded
       break;
   }
