@@ -29,7 +29,6 @@ function draw() {
     case 0:
       if (showAlternateImage == true) {
         image(images[0], 0, 0); // show the alt image
-        images.resize("360")
       } else {
         showAlternateImage = false;
         image(images[2], 0, 0);
