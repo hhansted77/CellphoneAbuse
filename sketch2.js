@@ -2,7 +2,7 @@ let shakes = 0;
 let shakey = 0;
 let minimumShakes = 50;
 let caseShakes = 100;
-let caseShakes2 = 500;
+let caseShakes2 = 500  ;
 
 function keyPressed() {
   console.log(state);
