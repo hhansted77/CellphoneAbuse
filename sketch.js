@@ -21,6 +21,7 @@ function setup() {
   sounds[4] = loadSound("libraries/shriek.mp3");
   sounds[5] = loadSound("libraries/robotdizzy.mp3");
   sounds[6] = loadSound("libraries/phonedeath.mp3");
+  sounds[7] = loadSound('libraries/yell.mp3');
 }
 function draw() {
   switch (state) {

@@ -46,6 +46,10 @@ function keyPressed() {
   if (key == "u") {
     sounds[6].play();
   }
+
+  if (key == 'm'){//yell
+    sounds[7].play();
+  }
 } //, 2000);
 
 if (state == 1) {
