@@ -30,6 +30,8 @@ if (key == 'q'){
 }
  
 function deviceShaken(){
+  console.log(state);
+  console.log(shakes);
   if (state == 2)
     shakes++;
     shakey++;

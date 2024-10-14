@@ -6,11 +6,11 @@ let chirp;
 let sounds = [];
 
 function preload() {
-  images[0] = loadImage("libraries/Happi.png");
-  images[1] = loadImage("libraries/Sad.png");
-  images[2] = loadImage("libraries/Error.png");
-  images[3] = loadImage("libraries/Dizzy.png");
-  images[4] = loadImage("libraries/Ded.png");
+  images[0] = loadImage("libraries/Happi_copy.png");
+  images[1] = loadImage("libraries/Sad_copy.png");
+  images[2] = loadImage("libraries/Error_copy.png");
+  images[3] = loadImage("libraries/Dizzy_copy.png");
+  images[4] = loadImage("libraries/Ded_copy.png");
 
 }
 function setup() {
