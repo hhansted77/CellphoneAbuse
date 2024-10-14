@@ -11,18 +11,16 @@ function preload() {
   images[2] = loadImage("libraries/Error_copy.png");
   images[3] = loadImage("libraries/Dizzy_copy.png");
   images[4] = loadImage("libraries/Ded_copy.png");
-
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  sounds[0] = loadSound('libraries/wake-up-the-robot-84894.mp3');
-  sounds[1] = loadSound('libraries/robotgettingmad.mp3');
-  sounds[2] = loadSound('libraries/screamingrobotmad.mp3');
-  sounds[3] = loadSound('libraries/robotnooosounds.mp3');
-  sounds[4] = loadSound('libraries/shriek.mp3');
-  sounds[5] = loadSound('libraries/robotdizzy.mp3');
-  sounds[6] = loadSound('libraries/phonedeath.mp3');
-
+  sounds[0] = loadSound("libraries/wake-up-the-robot-84894.mp3");
+  sounds[1] = loadSound("libraries/robotgettingmad.mp3");
+  sounds[2] = loadSound("libraries/screamingrobotmad.mp3");
+  sounds[3] = loadSound("libraries/robotnooosounds.mp3");
+  sounds[4] = loadSound("libraries/shriek.mp3");
+  sounds[5] = loadSound("libraries/robotdizzy.mp3");
+  sounds[6] = loadSound("libraries/phonedeath.mp3");
 }
 function draw() {
   switch (state) {
@@ -37,7 +35,7 @@ function draw() {
       //happy to angry
 
       //if (mouseIsPressed) {
-       // chirp.play();
+      // chirp.play();
       //}
 
       break;
@@ -58,7 +56,8 @@ function draw() {
         image(images[1], 0, 0); // show the alt image
       } else {
         showAlternateImage = false;
-        image(images[3], 0, 0);}
+        image(images[3], 0, 0);
+      }
       //sad to dizzy
       break;
     case 3:
