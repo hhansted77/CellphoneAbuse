@@ -21,7 +21,7 @@ function setup() {
   sounds[3] = loadSound('libraries/robotnooosounds.mp3');
   sounds[4] = loadSound('libraries/shriek.mp3');
   sounds[5] = loadSound('libraries/robotdizzy.mp3');
-
+  sounds[6] = loadSound('libraries/phonedeath.mp3');
 
 }
 function draw() {

@@ -14,10 +14,33 @@ function keyPressed() {
       }
 
 //AUDIO KEYBINDS
-if (key == 'q'){
+if (key == 'q'){ //chirp (happy)
   sounds[0].play();
 }
 
+if (key == 'w'){//aawwuAAAWU (anger)
+  sounds[1].play();
+}
+
+if (key == 'e'){//ooooWWEAUUAUW*beep* (anger)
+  sounds[2].play();
+}
+
+if (key == 'r'){//sad oowoah oowoah oooooooowauuhh (dizzy/sad)
+  sounds[3].play();
+}
+
+if (key == 't'){//mouse shriek (dizzy/angry)
+  sounds[4].play();
+}
+
+if (key == 'y'){  
+  sounds[5].play();
+}
+
+if (key == 'u'){
+  sounds[6].play();
+}
 
 
   }//, 2000);
