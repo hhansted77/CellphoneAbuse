@@ -70,5 +70,3 @@ function draw() {
       break;
   }
 }
-(function(){
-  document.querySelector("body").requestFullscreen();})();
